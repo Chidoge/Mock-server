@@ -19,7 +19,7 @@ class MyThread(Thread):
 
             ts = time.time()
             encoded_body = json.dumps({
-                "ID": 0,
+                "ID": random.randint(0,1),
                 "location" : {
                     "x" : random.uniform(0, 2500),
                     "y" : random.uniform(0, 2500)
